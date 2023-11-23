@@ -1,0 +1,39 @@
+<?php
+	require "conexao.php";
+	require "cadastro.php";
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Login JS</title>
+    
+</head>
+<body>
+    
+	<form class="login" action="cadastro.php" method="POST">
+		<h2>Cadastrar</h2>
+        <div class="box-user">
+            <input type="text" placeholder="Nome" name="nome" required="">
+            <label></label>
+        </div>
+        <div class="box-user">
+            <input type="email" placeholder="Email" name="email" required="seuemail@dominio.com">
+            <label></label>
+        </div>  
+        <div class="box-user">
+            <input type="text" placeholder="Empresa" name="empresa" required="">
+            <label></label>
+        </div>
+        <div class="box-user">
+            <input type="password" placeholder="Senha" name="senha" required="">
+            <label></label>
+        </div>
+		<input type="submit" onclick="logar();" name="enviar">
+        </a>
+	</form> 
+ </div>
+</body>
+</html>
